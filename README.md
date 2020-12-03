@@ -1,2 +1,7 @@
 # Covid19-Predection-Project
+Introduction : 
+In terms of infrastructure, finance, industry, manufacturing, and many other tools, our society is in an era of incredible attempts to fight against the spread of this life-threatening disorder. Artificial Intelligence (AI) researchers are reinforcing their ability to develop mathematical paradigms using nationally dispersed data to investigate this pandemic. 
+This project aims to apply the machine learning models by using the real-time data from Kaggle Novel Corona Virus 2019 Dataset and Predict the future cases in the U.S.A for understanding the need and necessity of available resources and also to implement required actions accordingly to reduce the growth of coronavirus.
+In this pandemic investigation and forecasting, machine learning algorithms play an important role. Machine learning approaches help to identify the patterns of the epidemic. As a result, an immediate response might be prepared to prevent the spread of COVID-19 across society of the virus. In addition, machine learning models are used to predict the spread of COVID-19 across society and identify collective actions by the use of real-time data from Kaggle Novel Corona Virus 2019 Dataset.
+
 Observing the trends of Covid19 spread across the world and predicting the confirmed cases using various machine learning algorithms and determine the best model by looking into the root mean square error.
