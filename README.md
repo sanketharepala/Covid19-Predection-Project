@@ -24,7 +24,7 @@ By analyzing posts on social networking sites such as Twitter, we established th
 To determine the future confirmed and death cases we can easily estimate the workload on the health care department and then accordingly they can plan and adjust the resources or even find more ways to get the resources for example in the upcoming days there is going to be more number of confirmed cases so the need for ventilators or other supplies to cure things can be adjusted. Having an estimate would help a lot. If the confirmed case rate is going to decrease then the researchers could focus more on finding a vaccine for the virus. 
  
 ## Data Collection:
-[Novel-corona-virus-2019-dataset](https://www.kaggle.com/sudalairajkumar/novel-corona-virus-2019-dataset)
+[Novel-corona-virus-2019-dataset](https://www.kaggle.com/sudalairajkumar/novel-corona-virus-2019-dataset)-
 This data set contains columns like ObservationDate-date format from 01/22/2020-09/23/2020, Province/State, Country/Region, Last Updated, Confirmed, Deaths, recovered. 
 Exploratory data analysis (EDA) and Hypotheses for the Study:
 Initially imported the data and observed the data to make necessary transformations for analysis like converting the observation date column format to DateTime format(yyyy-mm-dd) and dropped the column S.No which is of no use.
