@@ -26,3 +26,5 @@ from statsmodels.tsa.stattools import adfuller
 !pip install pmdarima
 from pmdarima.arima import auto_arima
 std=StandardScaler()
+covid=pd.read_csv("covid_19_data_project.csv")
+covid.tail(5)
