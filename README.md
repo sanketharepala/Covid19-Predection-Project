@@ -26,6 +26,9 @@ To determine the future confirmed and death cases we can easily estimate the wor
 ## Data Collection:
 [Novel-corona-virus-2019-dataset](https://www.kaggle.com/sudalairajkumar/novel-corona-virus-2019-dataset)-
 This data set contains columns like ObservationDate-date format from 01/22/2020-09/23/2020, Province/State, Country/Region, Last Updated, Confirmed, Deaths, recovered. 
-Exploratory data analysis (EDA) and Hypotheses for the Study:
+## Exploratory data analysis (EDA) and Hypotheses for the Study:
 Initially imported the data and observed the data to make necessary transformations for analysis like converting the observation date column format to DateTime format(yyyy-mm-dd) and dropped the column S.No which is of no use.
+## Initial Data : 
+
+
 
