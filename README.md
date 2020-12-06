@@ -31,5 +31,5 @@ Initially imported the data and observed the data to make necessary transformati
 ## Initial Data : 
 The data contains days confirmed cases which are updated at few timings on the same day separated by region. For our analysis, we have to group the data country wise and day wise and use aggregate functions like sum, log to get the total number of cases in that country on a particular day.
 
-![](Screen Shot 2020-12-02 at 12.41.17 PM.png)
+![](Screen%20Shot%202020-12-02%20at%2012.41.17%20PM.png)
 
