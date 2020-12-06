@@ -29,6 +29,7 @@ This data set contains columns like ObservationDate-date format from 01/22/2020-
 ## Exploratory data analysis (EDA) and Hypotheses for the Study:
 Initially imported the data and observed the data to make necessary transformations for analysis like converting the observation date column format to DateTime format(yyyy-mm-dd) and dropped the column S.No which is of no use.
 ## Initial Data : 
+The data contains days confirmed cases which are updated at few timings on the same day separated by region. For our analysis, we have to group the data country wise and day wise and use aggregate functions like sum, log to get the total number of cases in that country on a particular day.
 
-
+[](Screen Shot 2020-12-02 at 12.41.17 PM.png)
 
