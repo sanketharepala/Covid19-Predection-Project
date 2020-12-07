@@ -35,84 +35,88 @@ The data contains days confirmed cases which are updated at few timings on the s
 
 ## Data Transformation:
 Dropped column S.No which is not required for our analysis and converted the Observation Date to required Date-time Format(YYYY-MM-DD)
-![]
+![](Images/Data%20Transformations.png)
 Grouping the countries and perform aggregate functions to get the sum of confirmed cases in a region on a particular date observe the total number of confirmed,recoverd,death,Active cases and also log(Active), Log(Confirmed cases)
 Active Cases = Number of Confirmed Cases - Number of Recovered Cases - Number of Death Cases
-![]
+![](Images/Grouping%20data.png)
 Grouped the data according to daywise along with the new column Day since 
-![]
-### Basic Information
+![](Images/By%20date%20grouping.png)
+### Basic Information:
 Observing the basic informaton 
-![]
-### choropleth plot
+![](Images/Basic%20Information.png)
+### choropleth plot:
 Observing the Corona virus spread across the world using choropleth plot This is an animation plot that shows how the covid initially started and how it spread to the entire world by changing the color of the covid affected region day by day.
+![](Images/choropleth%20Plot.png)
 I suggest you to look into this observation using python code for better undestanding
 
 ### Distribution of Active and Closed cases:
 #### Active Cases:
-![]
+![](Images/Active%20Cases.png)
 Active Cases = Number of Confirmed Cases - Number of Recovered Cases - Number of Death Cases
-![]
 By observing the trend we can observe that it is an increasing plot and the increase in Active cases indicate that the death and recovered cases are lower than the confirmed cases per day.
 #### Closed Cases:
-![]
+![](Images/Closed%20Cases.png)
 Closed Cases = Number of Recovered Cases + Number of Death Cases
-![]
 An increase in Closed cases indicates that, Either more people are getting recovered or more people are dying. 
 ### Mortality Rate and Recovery Rate:
-![]
+![](Images/Calculating%20Mr%20Rr.png)
 Mortality rate = (Number of Death Cases / Number of Confirmed Cases) x 100
 Recovery Rate= (Number of Recovered Cases / Number of Confirmed Cases) x 100
-![]
+![](Images/Mortality%20and%20recovery%20rate%20graph.png)
 From the recovery rate graph, we can observe that it started raising again which is evidence that the number of closed cases is increasing. 
 The mortality rate is normal which is a good sign.
 ### Analysis of United Sates Data:
-![]
+![](Images/USA%20Data.png)
 Observing its trends and comparing with the most affected countries and also neighboring countries of the united states
 ### Clustring countries:
-![]
+![](Images/Countrywise calculations.png)
 Clustering the countries by using countrywide mortality and recovery rate, Here I used Elbow 
 method to determine the number of clusters.
-![]
+![](Images/Elbow%20graph.png)
 ![]
 To determine the number of clusters we used Elbow Method and Hierarchical Clustering Both of them shows K=3 will correct number of clusters.
-![]
+![](Images/Clustring%20plot.png)
 From the above graph we can easily understand that Cluster 0 countries are countries with High recovery rate and low mortality rate, Cluster 1 are countries with Average recovery rate and high mortality rate, Cluster 2 are High Mortality and low recovery rate which means they really have to take extreme measure to reduce the mortality rate and increase the recovery rate.
 ## Machine Learning Models For Confirm Cases Prediction:
 ### Linear Regression:
-![]
+![](Images/Linear%20regression%201.png)
 Model Graph for Linear Regression
-![]
+![](Images/Linear%20regression%20graph.png)
 From the above graph we can easily see that the Linear regression model is falling apart. The trend of the graph is not linear which is clearly visible.
 ### Polynomial Regression:
-![]
+![](Images/Polynomial%20regression.png)
 Model Graph for Polynomial Regression
-![]
+![](Polynomial%20regression%20graph.png)
 It looks similar with the Polynomial regression model but tends to be deviated for the recent times.
 ### SVM:
-![]
+![](Images/SVM%201.png)
 Model Graph for SVM 
-![]
+![](Images/SVM%20graph.png)
 The SVM model does not fit properly, It clearly shows a deviation and intersecs the actual one at two points.
 ### Auto Regression(AR):
-![]
+![](Images/AR%20model.png)
 Confirmed cases AR model
-![]
+![](Images/AR%20graph.png)
 ### Moving Average(MA):
-![]
+![](Images/MA%20model.png)
 Confirmed cases MA model
-![]
+![](Images/MA%20graph.png)
 ### ARIMA:
-![]
+![](Images/ARIMA%20Model.png)
 Confirmed cases ARIMA model
-![]
+![](Images/ARIMA%20graph.png)
 ## Results:
-![]
+![](Images/Results.png)
 Prediction for next 5 days using all the 6 models and also root mean square error value of all the models sorted in ascending order are published above. From the above results we can observe that the error value is observed to be less for the AR model. Usually time series models are best for such a type of date.
 ## Conclusion:
 Our Predictions Show that the Auto-Regressive Model is the best among the 6 models with the 
 less root mean square value of 37251.69. Since this is time-series data ARIMA will be the best 
 model for handling the time series data.
 ## Bibliography:
-
+#### 1) [Novel Corona Virus 2019 Dataset](https://www.kaggle.com/sudalairajkumar/novel-corona-virus-2019-dataset)
+#### 2) [Coronavirus: Tesla donates hundreds of ventilators to New York](https://www.bbc.com/news/technology-52071314)
+#### 3) [COVID-19 Epidemic Analysis using Machine Learning and Deep Learning Algorithms](https://www.medrxiv.org/content/10.1101/2020.04.08.20057679v2.full.pdf)
+#### 4) [COVID-19 Outbreak Prediction using Machine Learning Algorithm | by Wie Kiang H. | Jul, 2020](https://towardsdatascience.com/covid-19-outbreak-prediction-using-machine-learning-algorithm-ce5641bd55bf)
+#### 5) [Global Data Science Project for COVID-19 Summary Report](https://arxiv.org/pdf/2006.05573.pdf)
+#### 6) [kaggle.com-3m-cases-in-india](https://www.kaggle.com/ranjithks/ran-covid19-nukes-3m-cases-in-india)
 
