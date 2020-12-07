@@ -1,4 +1,4 @@
-# Covid19-Predection-Project
+# Covid19-Prediction-Project
 
 ## Introduction : 
 In terms of infrastructure, finance, industry, manufacturing, and many other tools, our society is in an era of incredible attempts to fight against the spread of this life-threatening disorder. Artificial Intelligence (AI) researchers are reinforcing their ability to develop mathematical paradigms using nationally dispersed data to investigate this pandemic. 
