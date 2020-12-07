@@ -86,7 +86,7 @@ From the above graph we can easily see that the Linear regression model is falli
 ### Polynomial Regression:
 ![](Images/Polynomial%20regression.png)
 Model Graph for Polynomial Regression
-![](Polynomial%20regression%20graph.png)
+![](Images/Polynomial%20regression%20graph.png)
 It looks similar with the Polynomial regression model but tends to be deviated for the recent times.
 ### SVM:
 ![](Images/SVM%201.png)
