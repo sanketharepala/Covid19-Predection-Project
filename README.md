@@ -28,8 +28,91 @@ To determine the future confirmed and death cases we can easily estimate the wor
 This data set contains columns like ObservationDate-date format from 01/22/2020-09/23/2020, Province/State, Country/Region, Last Updated, Confirmed, Deaths, recovered. 
 ## Exploratory data analysis (EDA) and Hypotheses for the Study:
 Initially imported the data and observed the data to make necessary transformations for analysis like converting the observation date column format to DateTime format(yyyy-mm-dd) and dropped the column S.No which is of no use.
-## Initial Data : 
+## Initial Data: 
 The data contains days confirmed cases which are updated at few timings on the same day separated by region. For our analysis, we have to group the data country wise and day wise and use aggregate functions like sum, log to get the total number of cases in that country on a particular day.
 
-![](Screen%20Shot%202020-12-02%20at%2012.41.17%20PM.png)
+![](Images/Initial%20Data.png)
+
+## Data Transformation:
+Dropped column S.No which is not required for our analysis and converted the Observation Date to required Date-time Format(YYYY-MM-DD)
+![]
+Grouping the countries and perform aggregate functions to get the sum of confirmed cases in a region on a particular date observe the total number of confirmed,recoverd,death,Active cases and also log(Active), Log(Confirmed cases)
+Active Cases = Number of Confirmed Cases - Number of Recovered Cases - Number of Death Cases
+![]
+Grouped the data according to daywise along with the new column Day since 
+![]
+### Basic Information
+Observing the basic informaton 
+![]
+### choropleth plot
+Observing the Corona virus spread across the world using choropleth plot This is an animation plot that shows how the covid initially started and how it spread to the entire world by changing the color of the covid affected region day by day.
+I suggest you to look into this observation using python code for better undestanding
+
+### Distribution of Active and Closed cases:
+#### Active Cases:
+![]
+Active Cases = Number of Confirmed Cases - Number of Recovered Cases - Number of Death Cases
+![]
+By observing the trend we can observe that it is an increasing plot and the increase in Active cases indicate that the death and recovered cases are lower than the confirmed cases per day.
+#### Closed Cases:
+![]
+Closed Cases = Number of Recovered Cases + Number of Death Cases
+![]
+An increase in Closed cases indicates that, Either more people are getting recovered or more people are dying. 
+### Mortality Rate and Recovery Rate:
+![]
+Mortality rate = (Number of Death Cases / Number of Confirmed Cases) x 100
+Recovery Rate= (Number of Recovered Cases / Number of Confirmed Cases) x 100
+![]
+From the recovery rate graph, we can observe that it started raising again which is evidence that the number of closed cases is increasing. 
+The mortality rate is normal which is a good sign.
+### Analysis of United Sates Data:
+![]
+Observing its trends and comparing with the most affected countries and also neighboring countries of the united states
+### Clustring countries:
+![]
+Clustering the countries by using countrywide mortality and recovery rate, Here I used Elbow 
+method to determine the number of clusters.
+![]
+![]
+To determine the number of clusters we used Elbow Method and Hierarchical Clustering Both of them shows K=3 will correct number of clusters.
+![]
+From the above graph we can easily understand that Cluster 0 countries are countries with High recovery rate and low mortality rate, Cluster 1 are countries with Average recovery rate and high mortality rate, Cluster 2 are High Mortality and low recovery rate which means they really have to take extreme measure to reduce the mortality rate and increase the recovery rate.
+## Machine Learning Models For Confirm Cases Prediction:
+### Linear Regression:
+![]
+Model Graph for Linear Regression
+![]
+From the above graph we can easily see that the Linear regression model is falling apart. The trend of the graph is not linear which is clearly visible.
+### Polynomial Regression:
+![]
+Model Graph for Polynomial Regression
+![]
+It looks similar with the Polynomial regression model but tends to be deviated for the recent times.
+### SVM:
+![]
+Model Graph for SVM 
+![]
+The SVM model does not fit properly, It clearly shows a deviation and intersecs the actual one at two points.
+### Auto Regression(AR):
+![]
+Confirmed cases AR model
+![]
+### Moving Average(MA):
+![]
+Confirmed cases MA model
+![]
+### ARIMA:
+![]
+Confirmed cases ARIMA model
+![]
+## Results:
+![]
+Prediction for next 5 days using all the 6 models and also root mean square error value of all the models sorted in ascending order are published above. From the above results we can observe that the error value is observed to be less for the AR model. Usually time series models are best for such a type of date.
+## Conclusion:
+Our Predictions Show that the Auto-Regressive Model is the best among the 6 models with the 
+less root mean square value of 37251.69. Since this is time-series data ARIMA will be the best 
+model for handling the time series data.
+## Bibliography:
+
 
