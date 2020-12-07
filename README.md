@@ -73,7 +73,7 @@ Observing its trends and comparing with the most affected countries and also nei
 Clustering the countries by using countrywide mortality and recovery rate, Here I used Elbow 
 method to determine the number of clusters.
 ![](Images/Elbow%20graph.png)
-![]
+![](Images/Hierarchical%20Clustering.PNG)
 To determine the number of clusters we used Elbow Method and Hierarchical Clustering Both of them shows K=3 will correct number of clusters.
 ![](Images/Clustring%20plot.png)
 From the above graph we can easily understand that Cluster 0 countries are countries with High recovery rate and low mortality rate, Cluster 1 are countries with Average recovery rate and high mortality rate, Cluster 2 are High Mortality and low recovery rate which means they really have to take extreme measure to reduce the mortality rate and increase the recovery rate.
